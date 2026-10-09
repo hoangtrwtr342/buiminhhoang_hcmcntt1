@@ -1,11 +1,13 @@
-Bài 2 stage 6
+Bài 3 stage 6
 
-Ghi chú : em viết theo ứng dụng powershell
+1. tạo thư mục bằng một dòng lệnh
 
-1.pwd
+- New-Item -ItemType Directory -Force -Path "smart-farm\data\logs", "smart-farm\code", "smart-farm\backup"
 
-2.mkdir drink_module (để tạo thư mục tên là drink_module)
+2.tạo file bằng một dòng lệnh
 
-3. cd .\drink_module (để di chuyển và thư mục vừa tạo)
-  
-4. New-Item -Path "coffee.txt", "tea.txt" -Itemtype File
+-New-Item -ItemType File -Path "smart-farm\code\config.json", "smart-farm\code\sensors.py", "smart-farm\code\.env"
+
+3. Sao chép toàn bộ thư mục `code` sang `backup\code_v1` (bao gồm cả nội dung bên trong)
+
+-Copy-Item -Path "smart-farm\code" -Destination "smart-farm\backup\code_v1" -Recurse
