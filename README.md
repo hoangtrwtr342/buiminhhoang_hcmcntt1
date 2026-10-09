@@ -6,6 +6,7 @@ Phần 1: So sánh hai giải pháp
 1. Tiêu chí độ dài:
 
 Cách 1 (Tuyệt đối): Dài dòng, dễ viết sai chính tả.
+
 Cách 2 (Tương đối): Ngắn gọn, súc tích, dễ nhìn.
 
 2. Tiêu chí tính di động (Portability):
